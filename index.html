@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Motivační citát</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .quote-box {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      max-width: 600px;
+      text-align: center;
+      font-size: 1.4em;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="quote-box" id="quoteBox">
+    Načítám citát...
+  </div>
+
+  <script>
+    const quotes = [
+      "„Nejlepší čas zasadit strom byl před 20 lety. Druhý nejlepší je teď.“",
+      "„Úspěch není konečný, neúspěch není fatální: důležitá je odvaha pokračovat.“",
+      "„Nečekej. Nikdy nebude ten správný čas.“",
+      "„Tvůj čas je omezený, tak jím neplýtvej na život někoho jiného.“",
+      "„Věř, že to dokážeš a jsi v polovině cesty.“"
+    ];
+    const quote = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById("quoteBox").innerText = quote;
+  </script>
+</body>
+</html>
